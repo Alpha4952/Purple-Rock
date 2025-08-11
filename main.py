@@ -25,7 +25,6 @@ with open('commands.txt', 'r') as f:
     commands_list = f.readlines()
 
 class MyBot(commands.Bot):
-
     @bot.event
     async def on_ready():
         bot.tree.clear_commands(guild=discord.Object(id=1404219300658811001))
